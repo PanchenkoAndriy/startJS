@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+<div class="grid">Я grid</div>
+<div class="inline-grid">Я inline-grid</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки по умолчанию */
+        gap: 10px;
+    }
+
+    .box {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+
+    /* Медиа-запрос для экранов шириной до 768px (например, планшеты) */
+    @media (max-width: 768px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        }
+    }
+
+    /* Медиа-запрос для экранов шириной до 480px (например, мобильные телефоны) */
+    @media (max-width: 480px) {
+        .container {
+            grid-template-columns: 1fr; /* 1 колонка */
+        }
+    }
+    .grid {
+        display: grid;
+        font-size: 30px;
+        padding: 30px;
+        background-color: #794f45;
+        margin: 0 0 20px 0;
+    }
+    .inline-grid {
+        display: inline-grid;
+        font-size: 30px;
+        padding: 30px;
+        background-color: #77608d;
+    }
+</style>

@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="item">Йоу йоу йоу я хипхопер я пиу пиу</div>
+    <div class="item">Йоу йоу йоу я хипхопер я пиу пиу</div>
+    <div class="item">Йоу йоу йоу я хипхопер я пиу пиу</div>
+  </div>
+  
+  <style>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 колонки */
+    gap: 10px; /* Расстояние между элементами */
+    justify-content: space-between; /* Это влияет на расположение всех элементов внутри контейнера */
+    justify-items: end; /* Это влияет на расположение содержимого внутри ячеек */
+  }
+  
+  .item {
+    width: 70px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  </style>
+  <script>
+    let leto = 5 + 10;
+    var varvara = 20 + 2;
+    const constantin = 5 + 5;
+    console.log(leto);
+    console.log(varvara);
+    console.log(constantin);
+
+
+    let a = 5;
+    if (a > 10) {
+      console.log(true);
+    } else {
+      console.log(false)
+    }
+    
+    
+    let result = (a % 2 === 0) ? "Четное" : "Нечетное";
+    console.log(result);
+    if (a % 2 === 0) {
+      result = "Четное";
+    } else {
+      result = "Нечетное";
+    }
+    function add(a, b) {
+    return a + b;
+    }
+
+    // Пример вызова функции
+    let result = add(5, 3);
+    console.log(result); // Выведет: 8
+
+  </script>
+  
